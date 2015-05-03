@@ -7,7 +7,11 @@
 */
 Route::get('home', 'HomeController@index');
 
+Route::group(['namespace' => 'Admin', 'middleware' => []], function() {
+
+});
+
 Route::controllers([
-	'auth' => 'Auth\AuthController',
+	'/' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
