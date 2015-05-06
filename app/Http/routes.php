@@ -12,6 +12,5 @@ Route::group(['namespace' => 'Admin', 'middleware' => []], function() {
 });
 
 Route::controllers([
-	'/' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
+	'/' => 'Auth\AuthController'
 ]);
