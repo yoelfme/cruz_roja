@@ -10,10 +10,12 @@ Proyecto donado a la CRUZ ROJA en Retalhuleu, por parte de los estudiantes de In
 
 ...
 
-# Diagramas
-
-Diagramas con los modelos de la aplicacion
+## Diagramas de Modelado
 
 ![ER](docs/er1.jpg)
 ---
 ![ER2](docs/er2.jpg)
+
+## Diagrama ER
+
+![BD](docs/er.png)

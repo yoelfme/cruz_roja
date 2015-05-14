@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUsersTable extends Migration 
+class CreateTicketsTable extends Migration 
 {
 
 	/**
@@ -13,14 +13,17 @@ class CreateUsersTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::create('users', function(Blueprint $table)
+		Schema::create('tickets', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('name');
-			$table->string('email')->unique();
-			$table->string('password', 60);
-			$table->enum('type', ['administrator', 'recorder']);
-			$table->rememberToken();
+
+			$table->integer('id_book')->unsigned();
+			$table->foreign('id_book')->references('id')->on('books');
+
+			$table->string('code');
+			$table->enum('state', ['null', 'sold', 'unsold', 'blank']);
+
+
 			$table->timestamps();
 		});
 	}
@@ -32,7 +35,7 @@ class CreateUsersTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::drop('users');
+		Schema::drop('tickets');
 	}
 
 }
