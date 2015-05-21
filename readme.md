@@ -19,3 +19,7 @@ Proyecto donado a la CRUZ ROJA en Retalhuleu, por parte de los estudiantes de In
 ## Diagrama ER
 
 ![BD](docs/er.png)
+
+## Diagrama de Clases
+
+![Clases](docs/class_diagram.png)

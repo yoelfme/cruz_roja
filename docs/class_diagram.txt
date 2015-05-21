@@ -1,0 +1,26 @@
+[<package>Cruz Roja|
+[Usuario|name; email; password; type| addUser(); addBook()]
+[Talonario|id_raffle; id_seller; id_user; quantity; start; end; price; state]
+[Sorteo|title; description; date]
+[Vendedor|name; phone; address; dpi; profit]
+[Premio|id_raffle; order; description]
+[Ticket|id_boot; code; state]
+[Ganador|id_ticket; id_prize]
+
+[Usuario]o-[Talonario]
+[Sorteo]o-[Talonario]
+[Vendedor]o-[Talonario]
+
+[Sorteo]o-[Premio]
+
+[Talonario]o-[Ticket]
+
+[Ticket]o-[Ganador]
+[Premio]o-[Ganador]
+
+
+[Usuario]--[<note> The type user will be administrator or recorder]
+[Vendedor]--[<note> The profit of seller will be 0, 10, 20 or 30 ]
+[Ticket]--[<note> The state of ticket will be null, sold, unsold, blank]
+[Talonario]--[<note> The state of book  will be full_sold, sold, unsold, not_for_sale]
+]
