@@ -1,0 +1,262 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+html {
+  position: relative;
+  min-height: 100%;
+
+}
+body {
+  /* Margin bottom by footer height */
+
+  font-family:'Open Sans', arial !important;
+   background-color: #f2f2f2 !important;
+  
+
+}
+img {
+  display: inline-block !important;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  /* Set the fixed height of the footer here */
+
+  background-color: #565656;
+}
+span {
+  line-height: 1em;
+}
+a:hover {
+  color: #8fb12c !important;
+}
+nav {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background-color: white;
+}
+.logoPrincipal {
+  text-align: center;
+}
+.logoPrincipal img {
+  max-width: 40%;
+ }
+.menu {
+  text-align: right;
+  float: right;
+  margin-top: 25px;
+
+}
+.menu li {
+  display: inline;
+  margin-left: 21px;
+}
+.menu li:after {
+  content:"l";
+  position: absolute;
+margin-left: 10px;
+  height: auto;
+  color: gray
+
+
+}
+.menu a {
+  color: gray
+}
+.redes {
+  text-align: center;
+}
+.redes a {
+  color: white;
+  margin-left: 1.3em;
+}
+.redes a:hover {
+  color: #ffce05 !important;
+}
+.contenido {
+  background-color: #92b937;
+  color: white;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  text-align: center;
+  background-image: url(../img/bg-header.jpg);
+  
+  background-position: right 100% bottom;
+  background-repeat: no-repeat;
+
+}
+
+/*FUENTES*/
+
+.t1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+.t2 {
+  font-size: 1.1em;
+  font-weight: 300;
+}
+/**/
+/*colores de fuentes*/
+
+.fverde {
+  color: #92b937
+}
+.fblanco{
+  color: #ffffff;
+}
+
+.fgris{
+  color: #3f3f3f;
+}
+
+.iconos {
+  margin-bottom: 20px;
+  margin-top: 40px;
+
+}
+.btn-encontrar {
+  color:#8FB12C
+}
+.primerIcono:after {
+content: "";
+width: 1px;
+background-color: white;
+right: 1px;
+top: 0px;
+position: absolute;
+height: 100%;
+opacity: 0.3;
+
+}
+.complemento {
+  background-color: #f2f2f2;
+  padding-bottom: 2em;
+  padding-top: 1em;
+  margin-bottom: 3em;
+  color: gray;
+    margin-bottom: 100px;
+}
+/*BACKGROUNDS*/
+
+.bgverde {
+  background-color: #92b937;
+}
+.bgnaranja {
+  background-color: #e9702c
+}
+.bglila{
+  background-color: #d52ce9;
+}
+.bgazul{
+  background-color: #2cbfe9;
+}
+.bgblanco{
+  background-color: white;
+}
+
+
+/*MARGENES*/
+.margen1{
+  margin-top: 20px;
+}
+
+
+/*NOTICIAS BOX*/
+.box {
+  background-color: white;
+  min-height: 190px;
+  margin-top: 1em;
+}
+
+.boxT {
+  background-color: white;
+  margin-top: 1em;
+}
+
+.boxHeader {
+  height: 4px;
+  margin-bottom: 0.3em;
+}
+.boxContainer {
+  padding: 1em;
+  text-align: center;
+}
+
+.boxContainer2 {
+  padding: 0.2em;
+  text-align: text-left;
+  padding-left: 10px;
+}
+
+.tituloNoticia {
+  color: gray;
+  font-size: 1.2em;
+  line-height: 1em;
+  font-weight: 300;
+}
+.tituloNoticia::first-line {
+  font-weight: 700;
+}
+.noticias {
+  margin-top: 2em;
+}
+.copy {
+  margin-top: 2em;
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+}
+.boxes > div  {
+  
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.boxFirst {
+  background-image: url(../img/noticia1.png);
+  background-size: cover;
+  background-position: top;
+  min-height: 150px;
+ }
+.firsBoxContainer {
+ 
+  padding: 1.5em;
+}
+
+
+.boxMision {
+  background-image: url(../img/mision.png);
+  background-size: cover;
+  background-position: top;
+  min-height: 134px;
+ }
+
+.boxVision {
+  background-image: url(../img/vision.png);
+  background-size: cover;
+  background-position: top;
+  min-height: 134px;
+ }
+
+.boxTramite {
+  background-color: #ababab;
+  background-size: cover;
+  background-position: top;
+ }
+
+.menulateral{
+  position: fixed;
+  color: white;
+  z-index: 99;
+  background-color: #92B937;
+  width: 80%
+  
+
+}
+
+
+
+
+
+

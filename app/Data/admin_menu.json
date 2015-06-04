@@ -1,0 +1,8 @@
+{
+  "Usuarios": {
+    "code"  : "005",
+    "route" : "users",
+    "icon"  : "users",
+    "type"  : "administrator"
+  }
+}

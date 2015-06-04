@@ -5,7 +5,7 @@
 | Application Routes
 |--------------------------------------------------------------------------
 */
-Route::get('home', 'HomeController@index');
+Route::get('/', 'AdminController@index');
 
 Route::group(['namespace' => 'Admin', 'middleware' => []], function() {
     Route::resource('books', 'BooksController');

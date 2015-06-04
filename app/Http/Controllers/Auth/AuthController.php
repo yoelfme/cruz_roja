@@ -33,4 +33,14 @@ class AuthController extends Controller {
 		$this->middleware('guest', ['except' => 'getLogout']);
 	}
 
+    public function loginPath()
+    {
+        return 'login';
+    }
+
+    protected function getFailedLoginMessage()
+    {
+        return 'Credenciales Incorrectas';
+    }
+
 }

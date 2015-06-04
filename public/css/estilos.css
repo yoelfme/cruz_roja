@@ -1,0 +1,386 @@
+/*FUENTES*/
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,700');
+.fuente {
+  font-family: 'Open Sans', arial !important;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+
+  font-family: 'Open Sans', arial !important;
+  background-color: #f2f2f2 !important;
+}
+img {
+  display: inline-block !important;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+
+  background-color: #565656;
+}
+span {
+  line-height: 1em;
+}
+a:hover {
+  color: #8fb12c !important;
+}
+nav {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background-color: white;
+}
+.logoPrincipal {
+  text-align: center;
+}
+.logoPrincipal img {
+  max-width: 40%;
+}
+.menu {
+  text-align: right;
+  float: right;
+  margin-top: 25px;
+}
+.menu li {
+  display: inline;
+  margin-left: 21px;
+}
+.menu li:after {
+  content: "l";
+  position: absolute;
+  margin-left: 10px;
+  height: auto;
+  color: #808080;
+}
+.menu a {
+  color: #808080;
+}
+.redes {
+  text-align: center;
+}
+.redes a {
+  color: white;
+  margin-left: 1.3em;
+}
+.redes a:hover {
+  color: #ffce05 !important;
+}
+.contenido {
+  background-color: #92b937;
+  color: white;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  text-align: center;
+  background-image: url(../img/bg-header.jpg);
+  background-position: right 100% bottom;
+  background-repeat: no-repeat;
+}
+.contenidoInterno {
+  background-color: #92b937;
+  color: white;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-image: url(../img/bg-header.jpg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.contenidoInterno .iconos {
+  margin-bottom: 1em;
+  margin-top: 1.5em;
+}
+.filtros {
+  padding-top: 1em;
+}
+.verMenu {
+  position: absolute;
+  z-index: 10;
+  top: 1.1em;
+}
+.menulateral {
+  position: fixed;
+  color: white;
+  z-index: 99;
+  background-color: #92B937;
+  width: 80%;
+  height: 100%;
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+}
+.ocultaMenu {
+  transform: translate3d(-100%, 0, 0);
+  -webkit-transform: translate3d(-100%, 0, 0);
+}
+/*FUENTES*/
+.t1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+.t2 {
+  font-size: 1.1em;
+  font-weight: 300;
+}
+/**/
+/*colores de fuentes*/
+.fverde {
+  color: #92b937;
+}
+.fblanco {
+  color: #ffffff;
+}
+.fgris {
+  color: #3f3f3f;
+}
+.iconos {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.btn-encontrar {
+  color: #8FB12C;
+  margin-top: 1em;
+}
+.primerIcono:after {
+  content: "";
+  width: 1px;
+  background-color: white;
+  right: 1px;
+  top: 0px;
+  position: absolute;
+  height: 100%;
+  opacity: 0.3;
+}
+.complemento {
+  background-color: #f2f2f2;
+  padding-bottom: 2em;
+  padding-top: 1em;
+  color: gray;
+}
+/*BACKGROUNDS*/
+.bgverde {
+  background-color: #92b937;
+}
+.bgnaranja {
+  background-color: #e9702c;
+}
+.bglila {
+  background-color: #d52ce9;
+}
+.bgazul {
+  background-color: #2cbfe9;
+}
+.bgblanco {
+  background-color: white;
+}
+/*MARGENES*/
+.margen1 {
+  margin-top: 20px;
+}
+/*NOTICIAS BOX*/
+.box {
+  background-color: white;
+  min-height: 190px;
+  margin-top: 1em;
+}
+.boxT {
+  background-color: white;
+  margin-top: 1em;
+}
+.boxHeader {
+  height: 4px;
+  margin-bottom: 0.3em;
+}
+.boxContainer {
+  padding: 1em;
+  text-align: center;
+}
+.boxContainer2 {
+  padding: 0.2em;
+  text-align: text-left;
+  padding-left: 10px;
+}
+.tituloNoticia {
+  color: gray;
+  font-size: 1.2em;
+  line-height: 1em;
+  font-weight: 300;
+}
+.tituloNoticia::first-line {
+  font-weight: 700;
+}
+.noticias {
+  margin-top: 2em;
+}
+.copy {
+  margin-top: 2em;
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+}
+.boxes > div {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+.boxFirst {
+  background-image: url(../img/noticia1.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 88px;
+}
+.firsBoxContainer {
+  padding: 1.5em;
+}
+.boxMision {
+  background-image: url(../img/mision.png);
+  background-size: cover;
+  background-position: top;
+  min-height: 134px;
+}
+.boxVision {
+  background-image: url(../img/vision.png);
+  background-size: cover;
+  background-position: top;
+  min-height: 134px;
+}
+.boxTramite {
+  background-color: #ababab;
+  background-size: cover;
+  background-position: top;
+}
+.boxNews {
+  background-color: #ffffff;
+  border: 1px solid lightgray;
+  background-color: white;
+  min-height: 190px;
+  margin-top: 1em;
+  overflow: hidden;
+  position: relative;
+}
+.boxNews .imgNewHor {
+  height: 200px;
+  background-size: cover;
+}
+.boxNews .imgNewVer {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+.boxNews .descNew {
+  padding: 1em;
+  overflow: hidden;
+  min-height: 135px;
+}
+.boxNews .descNew p {
+  text-overflow: ellipsis;
+}
+.boxNews .descNew .fecha {
+  font-style: italic;
+  color: red;
+  font-size: 0.8em;
+}
+.boxNews .descNew .txtNew {
+  height: 80px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: ltr;
+}
+.boxNews .columna {
+  float: left;
+  width: 50%;
+}
+.boxNews .columna .verNew {
+  width: 50%;
+}
+.boxNews .verNew {
+  border-top: 1px solid lightgray;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 1em;
+  text-align: right;
+}
+.menulateral {
+  position: fixed;
+  color: white;
+  z-index: 99;
+  background-color: #92B937;
+  width: 80%;
+  height: 100%;
+  transition: 0.2s all ease;
+  -webkit-transition: 0.2s all ease;
+  box-shadow: 0px 0px 20px black;
+  padding-top: 3em;
+}
+.menulateral ul {
+  list-style: none;
+  padding-top: 2em;
+}
+.menulateral ul li {
+  font-size: 1.3em;
+  padding-top: 1.4em;
+  position: relative;
+}
+.menulateral ul li a {
+  color: white!important;
+}
+.menulateral ul li a:hover {
+  text-decoration: none;
+}
+.menulateral ul li a:after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.menulateral .verMenu {
+  position: absolute;
+  right: 2em;
+}
+.ocultaMenu {
+  transform: translate3d(-110%, 0, 0);
+  -webkit-transform: translate3d(-110%, 0, 0);
+}
+#filtroDos {
+  height: 100px;
+}
+#filtroDos,
+#filtroTres {
+  display: none;
+  height: 100px;
+}
+#filtroDos select,
+#filtroTres select {
+  font-size: 1.6em;
+  color: gray!important;
+  width: 80%;
+}
+.busqueda {
+  height: 83px;
+  padding-top: 1em;
+}
+.btn-next {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+.copy {
+  position: absolute;
+  width: 100%;
+  bottom: 1em;
+}
+.copy a {
+  color: white;
+}
+.copy a:hover {
+  color: black!important;
+}
+.viewNoticias {
+  padding-bottom: 1em;
+}
