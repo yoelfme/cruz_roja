@@ -9,8 +9,8 @@ Route::get('/', 'AdminController@index');
 
 Route::group(['namespace' => 'Admin', 'middleware' => []], function() {
     Route::resource('books', 'BooksController');
-    Route::resource('prizes', 'PrizeController');
-    Route::resource('raffles', 'RaffleController');
+    Route::resource('prizes', 'PrizesController');
+    Route::resource('raffles', 'RafflesController');
     Route::resource('seller', 'SellersController');
     Route::resource('tickets', 'TicketsController');
     Route::resource('users', 'UsersController');
