@@ -13,8 +13,11 @@
 
 @section('list-content-columns')
     <th class="text-center" style="width: 50px;">#</th>
-    <th>Descripcion</th>
-    <th>Usuario</th>
+    <th>Nombre</th>
+    <th>Telefono</th>
+    <th>Direccion</th>
+    <th>DPI</th>
+    <th>Comision</th>
     <th class="text-center" style="width: 75px;"><i class="fa fa-flash"></i></th>
 @stop
 
@@ -22,8 +25,11 @@
     @foreach($data as $key => $value)
         <tr>
             <td class="text-center">{{ $key + 1 }}</td>
-            <td>{{ $value->description }}</td>
-            <td>{{ $value->user->email }}</td>
+            <td>{{ $value->name }}</td>
+            <td>{{ $value->phone }}</td>
+            <td>{{ $value->address }}</td>
+            <td>{{ $value->dpi }}</td>
+            <td>{{ $value->profit }}</td>
             <td class="text-center">
                 <a href="#" data-id="{{ $value->id }}" data-toggle="tooltip" title="Editar" class="btn btn-effect-ripple btn-xs btn-success edit"><i class="fa fa-pencil"></i></a>
                 <a href="#" data-id="{{ $value->id }}" data-toggle="tooltip" title="Eliminar" class="btn btn-effect-ripple btn-xs btn-danger delete"><i class="fa fa-times"></i></a>
@@ -37,7 +43,7 @@
 <div id="div-modal"></div>
 <script>
     $(function(){
-        CRUD.url_base = 'admin/categoryguides';
+        CRUD.url_base = 'admin/sellers';
         Helper.rules = {
             'description'  : { required  : true },
             'observation'  : { required  : true }

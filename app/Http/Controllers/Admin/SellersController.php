@@ -7,8 +7,9 @@ use App\Repositories\Seller\SellerRepo;
 class SellersController extends CRUDController
 {
     protected $rules = array(
-        'description' => 'required',
-        'id_user' => 'required'
+        'name' => 'required',
+        'phone' => 'required',
+        'address' => 'required'
     );
 
     protected $module = '_sellers';
@@ -23,12 +24,16 @@ class SellersController extends CRUDController
     {
         if ($data) {
             return FormX::make()
-                ->hidden('id_user', $data->id_user)
-                ->input('description', 'Descripcion:', 'Descripcion', $data->description);
+                ->input('name', 'Nombre:', 'Nombre', $data->name)
+                ->input('phone', 'Telelefono:', 'Telelefono', $data->name)
+                ->input('address', 'Direccion:', 'Direccion', $data->name)
+                ->input('dpi', 'DPI:', 'DPI', $data->name);
         } else {
             return FormX::make()
-                ->hidden('id_user', \Auth::id())
-                ->input('description', 'Descripcion:', 'Descripcion');
+                ->input('name', 'Nombre:', 'Nombre')
+                ->input('phone', 'Telelefono:', 'Telelefono')
+                ->input('address', 'Direccion:', 'Direccion')
+                ->input('dpi', 'DPI:', 'DPI');
         }
     }
 

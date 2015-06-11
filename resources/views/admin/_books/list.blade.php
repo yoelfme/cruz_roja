@@ -13,8 +13,13 @@
 
 @section('list-content-columns')
     <th class="text-center" style="width: 50px;">#</th>
-    <th>Descripcion</th>
+    <th>Sorteo</th>
+    <th>Vendedor</th>
     <th>Usuario</th>
+    <th>Cantidad</th>
+    <th>Inicio</th>
+    <th>Fin</th>
+    <th>Precio</th>
     <th class="text-center" style="width: 75px;"><i class="fa fa-flash"></i></th>
 @stop
 
@@ -22,8 +27,13 @@
     @foreach($data as $key => $value)
         <tr>
             <td class="text-center">{{ $key + 1 }}</td>
-            <td>{{ $value->description }}</td>
-            <td>{{ $value->user->email }}</td>
+            <td>{{ $value->raffle->title }}</td>
+            <td>{{ $value->seller->name }}</td>
+            <td>{{ $value->user->name }}</td>
+            <td>{{ $value->quantity }}</td>
+            <td>{{ $value->start }}</td>
+            <td>{{ $value->end }}</td>
+            <td>{{ $value->price }}</td>
             <td class="text-center">
                 <a href="#" data-id="{{ $value->id }}" data-toggle="tooltip" title="Editar" class="btn btn-effect-ripple btn-xs btn-success edit"><i class="fa fa-pencil"></i></a>
                 <a href="#" data-id="{{ $value->id }}" data-toggle="tooltip" title="Eliminar" class="btn btn-effect-ripple btn-xs btn-danger delete"><i class="fa fa-times"></i></a>

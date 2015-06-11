@@ -1,20 +1,44 @@
 {
   "Usuarios": {
-    "code"  : "005",
-    "route" : "users",
-    "icon"  : "users",
-    "type"  : "administrator"
+    "code": "",
+    "route": "users",
+    "icon": "users",
+    "type": "administrator"
   },
   "Sorteos": {
-    "code"  : "005",
-    "route" : "raffles",
-    "icon"  : "list-alt",
-    "type"  : "administrator"
+    "code": "",
+    "route": "raffles",
+    "icon": "list-alt",
+    "type": "administrator"
+  },
+  "Premios": {
+    "code": "",
+    "route": "prizes",
+    "icon": "star",
+    "type": "administrator"
   },
   "Talonarios": {
-    "code"  : "005",
-    "route" : "books",
-    "icon"  : "book",
-    "type"  : "administrator"
+    "code": "",
+    "route": "books",
+    "icon": "book",
+    "type": "administrator"
+  },
+  "Tickets": {
+    "code": "",
+    "route": "tickets",
+    "icon": "ticket",
+    "type": "administrator"
+  },
+  "Vendedores": {
+    "code": "",
+    "route": "sellers",
+    "icon": "users",
+    "type": "administrator"
+  },
+  "Reportes": {
+    "code": "",
+    "route": "reports",
+    "icon": "book",
+    "type": "administrator"
   }
 }

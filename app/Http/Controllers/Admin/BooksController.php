@@ -10,8 +10,8 @@ use App\Repositories\Seller\SellerRepo;
 class BooksController extends CRUDController
 {
     protected $rules = array(
-        'description' => 'required',
-        'id_user' => 'required'
+        'id_user' => 'required',
+        'quantity' => 'required'
     );
 
     protected $module = '_books';
@@ -39,7 +39,6 @@ class BooksController extends CRUDController
                 ->hidden('id_user', $data->id_user)
                 ->select('id_raffle','Sorteo:', $raffles, $data->id_raffle)
                 ->select('id_seller','Vendedor:',$sellers, $data->id_seller)
-                ->input('description', 'Descripcion:', 'Descripcion', $data->description)
                 ->input('quantity', 'Cantidad:', 'Cantidad', $data->quantity)
                 ->input('start', 'Inicio:', 'Inicio', $data->quantity)
                 ->input('end', 'Final:', 'Final', $data->quantity)
@@ -49,7 +48,6 @@ class BooksController extends CRUDController
                 ->hidden('id_user', \Auth::id())
                 ->select('id_raffle','Sorteo:', $raffles)
                 ->select('id_seller','Vendedor:',$sellers)
-                ->input('description', 'Descripcion:', 'Descripcion')
                 ->input('quantity', 'Cantidad:', 'Cantidad')
                 ->input('start', 'Inicio:', 'Inicio')
                 ->input('end', 'Final:', 'Final')

@@ -11,7 +11,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => []], 
     Route::resource('books', 'BooksController');
     Route::resource('prizes', 'PrizesController');
     Route::resource('raffles', 'RafflesController');
-    Route::resource('seller', 'SellersController');
+    Route::resource('sellers', 'SellersController');
     Route::resource('tickets', 'TicketsController');
     Route::resource('users', 'UsersController');
     Route::resource('winners', 'WinnersController');
