@@ -7,7 +7,7 @@
 */
 Route::get('/', 'AdminController@index');
 
-Route::group(['namespace' => 'Admin', 'middleware' => []], function() {
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => []], function() {
     Route::resource('books', 'BooksController');
     Route::resource('prizes', 'PrizesController');
     Route::resource('raffles', 'RafflesController');

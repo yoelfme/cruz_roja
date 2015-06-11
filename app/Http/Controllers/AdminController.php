@@ -13,6 +13,9 @@ class AdminController extends Controller
     public function index()
     {
         $menu = AdminMenu::menu();
+
+        \Session::put('menu', $menu);
+
         return view('admin.home.home',compact('menu'));
     }
 

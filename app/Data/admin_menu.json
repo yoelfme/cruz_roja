@@ -4,5 +4,17 @@
     "route" : "users",
     "icon"  : "users",
     "type"  : "administrator"
+  },
+  "Sorteos": {
+    "code"  : "005",
+    "route" : "raffles",
+    "icon"  : "list-alt",
+    "type"  : "administrator"
+  },
+  "Talonarios": {
+    "code"  : "005",
+    "route" : "books",
+    "icon"  : "book",
+    "type"  : "administrator"
   }
 }

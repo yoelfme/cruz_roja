@@ -5,7 +5,7 @@ class Book extends BaseModel
 {
     protected $table = 'books';
 
-    protected $_relations = [
+    public $_relations = [
         'raffle',
         'seller',
         'user'

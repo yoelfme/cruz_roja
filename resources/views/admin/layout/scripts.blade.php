@@ -5,5 +5,4 @@
 <script  src="/assets/js/plugins/ckeditor/adapters/jquery.js" ></script>
 
 @section('other-scripts')
-
 @show

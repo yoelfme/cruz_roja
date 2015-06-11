@@ -20,6 +20,6 @@ interface BaseInterface
 
     public function getWithRelations();
 
-    public function lists();
+    public function lists($display = 'description');
 
 }
